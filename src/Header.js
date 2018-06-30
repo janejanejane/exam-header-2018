@@ -11,6 +11,8 @@ const HeaderWrapper = styled.div`
   flex-flow: row wrap;
   align-items: stretch;
   padding: 20px;
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   @media (min-width: 1025px) {
     height: 76px;
