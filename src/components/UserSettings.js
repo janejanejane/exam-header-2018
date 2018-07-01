@@ -38,7 +38,7 @@ const Avatar = styled.img`
 const SettingsMenu = styled.ul`
   background-color: #ffffff;
   border: solid 1px #e4e4e4;
-  padding: 24px;
+  padding: 10px 0;
   position: absolute;
   right: 10px;
   border-radius: 4px;
@@ -48,7 +48,37 @@ const SettingsMenu = styled.ul`
   li {
     display: block;
     text-align: left;
+    padding: 0 24px;
+  }
+
+  li a {
+    border-bottom: solid 1px rgba(74, 74, 74, 0.25);
     padding: 10px 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+  }
+
+  li a div {
+    float: right;
+    display: inline-block;
+    margin-left: 32px;
+    background-color: #f26620;
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+    font-weight: 900;
+    line-height: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  li:last-child a {
+    border-bottom: 0;
+  }
+
+  li:hover {
+    background-color: #d8d8d8;
   }
 
   :before {
@@ -76,19 +106,22 @@ class UserSettings extends Component {
         },
         {
           name: 'My Projects',
-          link: '/projects'
+          link: '/projects',
+          alert: 23
         },
         {
           name: 'Notifications',
-          link: '/notifications'
+          link: '/notifications',
+          alert: 23
         },
         {
           name: 'Tasks',
-          link: '/logout'
+          link: '/tasks',
+          alert: 23
         },
         {
           name: 'Help',
-          link: '/logout'
+          link: '/help'
         },
         {
           name: 'Logout',

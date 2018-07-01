@@ -25,8 +25,15 @@ injectGlobal`
   }
 
   li a {
+    cursor: pointer;
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     line-height: 18px;
+  }
+
+  li a:hover,
+  li a.active {
+    font-weight: 700;
   }
 `

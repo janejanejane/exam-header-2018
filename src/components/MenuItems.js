@@ -14,7 +14,6 @@ const MenuWrapper = styled.ul`
   li a:hover,
   li a.active {
     color: #f26620;
-    font-weight: 700;
   }
 `;
 

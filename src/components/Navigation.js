@@ -41,7 +41,14 @@ class Navigation extends Component {
         <li key={i}>
           <a href={item.link} 
             className={this.state.activeMenu === item.link ? 'active' : ''}
-            onClick={(e) => this.handleClick(item.link)}>{item.name}</a>
+            onClick={(e) => this.handleClick(item.link)}>
+            {item.name}            
+            {
+              item.alert
+              ? <div>{item.alert}</div>
+              : null
+            }
+          </a>
         </li>
       )
     })
