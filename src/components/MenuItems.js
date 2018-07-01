@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Navigation from './Navigation';
 
 const MenuWrapper = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   line-height: 76px;
 
   li {
     display: inline-block;
     text-align: left;
-    width: 114px;
+    padding-right: 40px;
   }
 
-  li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 18px;
-  }
-
-  li a:hover {
+  li a:hover,
+  li a.active {
     color: #f26620;
     font-weight: 700;
   }
@@ -49,18 +42,11 @@ class MenuItems extends Component {
       ]
     }
   }
+
   render() {
     return (
       <MenuWrapper>
-        {
-          this.state.menuList.map((item, i) => {
-            return (
-              <li key={i}>
-                <a href={item.link}>{item.name}</a>
-              </li>
-            )
-          })
-        }
+        <Navigation items={this.state.menuList} />
       </MenuWrapper>
     )
   }

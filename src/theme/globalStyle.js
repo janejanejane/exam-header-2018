@@ -17,4 +17,16 @@ injectGlobal`
     font-size: 14px;
     font-weight: 400;
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 18px;
+  }
 `
