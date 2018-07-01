@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import CompanyName from './components/CompanyName';
+import Hamburger from './components/Hamburger';
 import UserSettings from './components/UserSettings';
+import Helper from './utils/helper';
 
 const HeaderWrapper = styled.div`
   background-color: #F3F3F3;
@@ -16,10 +18,27 @@ const HeaderWrapper = styled.div`
 `
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      mobile: false
+    };
+  }
+  componentWillMount() {
+    this.setState({
+      mobile: Helper.isMobileDevice()
+    });
+  }
+
   render() {
     return (
       <HeaderWrapper>
         <CompanyName>Company Name</CompanyName>
+        { 
+          (this.state.mobile)
+          ? <Hamburger />
+          : null
+        }
         <UserSettings />
       </HeaderWrapper>
     );
