@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import blankuser from '../images/blank.gif';
 
 const SettingsWrapper = styled.div`
-  padding-left: 20px;
+  padding: 0 20px;
   border-left: solid 2px rgba(0, 0, 0, 0.2);
 
   button {
+    cursor: pointer;
     background-color: transparent;
     outline: none;
     text-align: right;
@@ -14,6 +15,10 @@ const SettingsWrapper = styled.div`
     width: 50px;
     height: 100%;
     padding: 0;
+  }
+
+  :hover {
+    background-color: #e4e4e4;
   }
 `
 

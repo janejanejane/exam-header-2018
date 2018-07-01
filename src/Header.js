@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import CompanyName from './components/CompanyName';
 import Hamburger from './components/Hamburger';
+import MenuItems from './components/MenuItems';
 import UserSettings from './components/UserSettings';
 import Helper from './utils/helper';
 
@@ -12,9 +13,8 @@ const HeaderWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-items: stretch;
-  padding: 0 20px;
-  border: solid 2px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  padding: 0;
+  border: solid 2px rgba(0, 0, 0, 0.25);
 `
 
 class Header extends Component {
@@ -37,7 +37,7 @@ class Header extends Component {
         { 
           (this.state.mobile)
           ? <Hamburger />
-          : null
+          : <MenuItems />
         }
         <UserSettings />
       </HeaderWrapper>
