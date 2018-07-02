@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const BarsWrapper = styled.div`
@@ -12,18 +12,20 @@ const BarsWrapper = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
     margin: 6px 0;
   }
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
 `
 
-class Hamburger extends Component {
-  render() {
-    return (
-      <BarsWrapper>
-        <div></div>
-        <div></div>
-        <div></div>
-      </BarsWrapper>
-    )
-  }
+const Hamburger = ({ clickEvent }) => {
+  return (
+    <BarsWrapper onClick={clickEvent}>
+      <div></div>
+      <div></div>
+      <div></div>
+    </BarsWrapper>
+  );
 }
 
 export default Hamburger;
