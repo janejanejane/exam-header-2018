@@ -20,7 +20,7 @@ const BarsWrapper = styled.div`
 
 const Hamburger = ({ clickEvent }) => {
   return (
-    <BarsWrapper onClick={clickEvent}>
+    <BarsWrapper id="navbar-menus" onClick={clickEvent}>
       <div></div>
       <div></div>
       <div></div>

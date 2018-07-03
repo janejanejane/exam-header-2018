@@ -7,6 +7,7 @@ const SettingsWrapper = styled.div`
   padding: 0 20px;
   border-left: solid 1px rgba(74, 74, 74, 0.25);
   max-width: 125px;
+  height: inherit;
   
   :hover {
     background-color: #e4e4e4;
