@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import CompanyName from './components/CompanyName';
-import MenuItems from './components/MenuItems';
-import UserSettings from './components/UserSettings';
+import CompanyName from 'components/CompanyName';
+import MenuItems from 'containers/MenuItems';
+import UserSettings from 'containers/UserSettings';
 
 const HeaderWrapper = styled.div`
   background-color: #f3f3f3;

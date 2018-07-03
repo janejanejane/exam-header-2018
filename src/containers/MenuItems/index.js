@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Hamburger from './Hamburger';
-import Navigation from './Navigation';
+import Hamburger from 'components/Hamburger';
+import Navigation from 'components/Navigation';
 
 const MenuWrapper = styled.ul`
   display: none;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Navigation from './Navigation';
-import blankuser from '../images/blank.gif';
+import Navigation from 'components/Navigation';
+import blankuser from 'images/blank.gif';
 
 const SettingsWrapper = styled.div`
   padding: 0 20px;
