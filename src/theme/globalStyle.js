@@ -1,21 +1,22 @@
 import { injectGlobal } from 'styled-components';
+import variables from './variables';
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
   body {
-    color: #4a4a4a;
+    color: ${variables.body.color};
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: ${variables.body.fontSize};
+    font-weight: ${variables.body.fontSize};
   }
 
   a {
-    color: #4a4a4a;
-    font-size: 14px;
-    font-weight: 400;
+    color: ${variables.body.color};
+    font-size: ${variables.body.fontSize};
+    font-weight: ${variables.body.fontSize};
   }
 
   ul {

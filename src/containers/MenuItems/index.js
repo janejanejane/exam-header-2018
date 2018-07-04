@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Hamburger from 'components/Hamburger';
 import Navigation from 'components/Navigation';
+import variables from 'theme/variables';
 
 const MenuWrapper = styled.ul`
   display: none;
@@ -9,7 +10,7 @@ const MenuWrapper = styled.ul`
   &.show {
     display: block;
     position: absolute;
-    background-color: #f3f3f3;
+    background-color: ${variables.header.backgroundColor};
     bottom: 0;
     right: 0;
     left: 0;
@@ -18,18 +19,18 @@ const MenuWrapper = styled.ul`
     li a {
       padding: 20px 0;
       margin: 0 20px;
-      border-bottom: solid 1px #e4e4e4;
+      border-bottom: solid 1px ${variables.colors.grey};
     }
   }
 
   li a:hover,
   li a.active {
-    color: #f26620;
+    color: ${variables.colors.orange};
   }
 
   @media (min-width: 1025px) {
     display: block;
-    line-height: 76px;
+    line-height: ${variables.header.height};
 
     li {
       display: inline-block;

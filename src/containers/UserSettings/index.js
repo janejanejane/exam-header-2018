@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Navigation from 'components/Navigation';
 import blankuser from 'images/blank.gif';
+import variables from 'theme/variables';
 
 const SettingsWrapper = styled.div`
   padding: 0 20px;
-  border-left: solid 1px rgba(74, 74, 74, 0.25);
+  border-left: ${variables.border};
   max-width: 125px;
   height: inherit;
   
   :hover {
-    background-color: #e4e4e4;
+    background-color: ${variables.colors.grey};
   }
 
   @media (min-width: 1025px) {
@@ -37,14 +38,14 @@ const Avatar = styled.img`
 
 // @link: https://stackoverflow.com/a/29791974/476584
 const SettingsMenu = styled.ul`
-  background-color: #ffffff;
-  border: solid 1px #e4e4e4;
+  background-color: ${variables.colors.white};
+  border: solid 1px ${variables.colors.grey};
   padding: 10px 0;
   position: absolute;
   right: 10px;
   border-radius: 4px;
   margin-top: 10px;
-  box-shadow: 0px 2px 30px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
 
   li {
     display: block;
@@ -53,7 +54,7 @@ const SettingsMenu = styled.ul`
   }
 
   li a {
-    border-bottom: solid 1px rgba(74, 74, 74, 0.25);
+    border-bottom: ${variables.border};
     padding: 10px 0;
     clear: both;
     display: inline-block;
@@ -64,7 +65,7 @@ const SettingsMenu = styled.ul`
     float: right;
     display: inline-block;
     margin-left: 32px;
-    background-color: #f26620;
+    background-color: ${variables.colors.orange};
     border-radius: 50%;
     font-size: 10px;
     color: white;
@@ -91,7 +92,7 @@ const SettingsMenu = styled.ul`
     height: 0;
     border-style: solid;
     border-width: 0 17px 17px 17px;
-    border-color: transparent transparent #ffffff transparent;
+    border-color: transparent transparent ${variables.colors.white} transparent;
   }
 `
 

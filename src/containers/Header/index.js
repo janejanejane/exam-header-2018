@@ -3,16 +3,17 @@ import styled from 'styled-components';
 import CompanyName from 'components/CompanyName';
 import MenuItems from 'containers/MenuItems';
 import UserSettings from 'containers/UserSettings';
+import variables from 'theme/variables';
 
 const HeaderWrapper = styled.div`
-  background-color: #f3f3f3;
-  height: 76px;
+  background-color: ${variables.header.backgroundColor};
+  height: ${variables.header.height};
   text-align: center;
   display: flex;
   flex-flow: row wrap;
   align-items: stretch;
   padding: 0;
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+  box-shadow: ${variables.header.boxShadow};
 `
 
 const Header = () => {
