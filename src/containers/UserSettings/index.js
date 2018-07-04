@@ -94,6 +94,13 @@ const SettingsMenu = styled.ul`
     border-width: 0 17px 17px 17px;
     border-color: transparent transparent ${variables.colors.white} transparent;
   }
+
+  
+  @media (min-width: 1025px) {
+    :before {
+      right: 22px;
+    }
+  }
 `
 
 class UserSettings extends Component {

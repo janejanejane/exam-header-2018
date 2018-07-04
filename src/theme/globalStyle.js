@@ -10,13 +10,13 @@ injectGlobal`
     padding: 0;
     font-family: Roboto, sans-serif;
     font-size: ${variables.body.fontSize};
-    font-weight: ${variables.body.fontSize};
+    font-weight: ${variables.body.fontWeight};
   }
 
   a {
     color: ${variables.body.color};
     font-size: ${variables.body.fontSize};
-    font-weight: ${variables.body.fontSize};
+    font-weight: ${variables.body.fontWeight};
   }
 
   ul {
